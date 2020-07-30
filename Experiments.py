@@ -129,7 +129,7 @@ def run_base_experiment(data_path, dataset_type, model_params, model_type, opt):
 
 
 if __name__ == "__main__":
-    # deepfm_experiment('citero_sample.csv', dataset_type='critero')
+    deepfm_experiment('citero_sample.csv', dataset_type='critero')
     # deepfm_experiment('taboola_sample.csv', dataset_type='tabbola')
 
     # xdeepfm_experiment('citero_sample.csv', dataset_type='critero')
@@ -141,6 +141,6 @@ if __name__ == "__main__":
     # fgcnn_xdeepfm_experiment('citero_sample.csv', dataset_type='critero')
     # fgcnn_xdeepfm_experiment('taboola_sample.csv', dataset_type='tabbola')
 
-    fgnn_resxdeepfm('citero_sample.csv', dataset_type='critero')
+    # fgnn_resxdeepfm('citero_sample.csv', dataset_type='critero')
     # fgnn_resxdeepfm('taboola_sample.csv', dataset_type='tabbola')
 
