@@ -89,7 +89,7 @@ class ResCIN(CIN):
     def __init__(self, layer_size=(128, 128), activation='relu', split_half=True, l2_reg=1e-5, seed=1024, skip_rate=1,
                  **kwargs):
         self.skip_rate = skip_rate
-        super(ResCIN, self).__init__(layer_size, activation, split_half, l2_reg, seed, **kwargs ** kwargs)
+        super(ResCIN, self).__init__(layer_size, activation, split_half, l2_reg, seed, **kwargs)
 
     def build(self, input_shape):
         self.conv_layers = [Conv2D(self.layer_size[i], kernel_size=(1, 1), padding='valid') for i in
